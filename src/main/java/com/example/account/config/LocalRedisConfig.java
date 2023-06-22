@@ -16,8 +16,13 @@ public class LocalRedisConfig {
 
     @PostConstruct
     public void startRedis() {
-        redisServer = new RedisServer(redisPort);
-        redisServer.start();
+        redisServer = RedisServer.builder()
+                .port(redisPort)
+                .build();
+        try {
+            redisServer.start();
+        } catch (Exception e) {
+        }
     }
 
     @PreDestroy
