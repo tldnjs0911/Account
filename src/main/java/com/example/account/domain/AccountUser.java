@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-public class AccountUser {
+public class AccountUser  {
 
     @Id
     @GeneratedValue

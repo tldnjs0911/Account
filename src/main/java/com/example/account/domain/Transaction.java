@@ -17,7 +17,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 @Entity
-@EntityListeners(AuditingEntityListener.class)
 public class Transaction {
     @Id
     @GeneratedValue
@@ -41,17 +40,4 @@ public class Transaction {
     @LastModifiedDate
     private LocalDateTime updatedAt;
 
-//    public Transaction(Long id, TransactionType transactionType, TransactionResultType transactionResultType,
-//                      Account account, Long amount, Long balanceSnapshot, String transactionId,
-//                       LocalDateTime createdAt, LocalDateTime updatedAt) {
-//        this.id = id;
-//        this.transactionType = transactionType;
-//        this.transactionResultType = transactionResultType;
-//        this.account = account;
-//        this.amount = amount;
-//        this.balanceSnapshot = balanceSnapshot;
-//        this.transactionId = transactionId;
-//        this.createdAt = createdAt;
-//        this.updatedAt = updatedAt;
-//    }
 }

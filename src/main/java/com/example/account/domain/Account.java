@@ -39,19 +39,7 @@ public class Account {
     @LastModifiedDate
     private LocalDateTime updatedAt;
 
-//    public Account(Long id, AccountUser accountUser, String accountNumber,
-//                   AccountStatus accountStatus, Long balance, LocalDateTime registeredAt,
-//                   LocalDateTime unregisteredAt, LocalDateTime createdAt, LocalDateTime updatedAt) {
-//        this.id = id;
-//        this.accountUser = accountUser;
-//        this.accountNumber = accountNumber;
-//        this.accountStatus = accountStatus;
-//        this.balance = balance;
-//        this.registeredAt = registeredAt;
-//        this.unregisteredAt = unregisteredAt;
-//        this.createdAt = createdAt;
-//        this.updatedAt = updatedAt;
-//    }
+
 
     public void useBalance(Long amount) {
         if (amount > balance) {
